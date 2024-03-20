@@ -1,5 +1,5 @@
 import scratchattach as scratch3,time,random,requests
-session = scratch3.login("kannbo", {{password}}) # 自分のパスワード
+session = scratch3.login("kannbo", {{PASSWORD}}) # 自分のパスワード
 conn = session.connect_cloud("980998475") # project_id
 NAME={}
 ii=0
