@@ -3,7 +3,7 @@ from bottle import run,route,Bottle
 import os
 PASSWORD = os.environ.get('PASSWORD')
 print(PASSWORD)
-session = scratch3.login("kannbo", {{PASSWORD}}) # 自分のパスワード
+session = scratch3.login("kannbo", str(PASSWORD)) # 自分のパスワード
 conn = session.connect_cloud("980998475") # project_id
 NAME={}
 ii=0
