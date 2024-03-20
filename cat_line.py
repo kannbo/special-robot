@@ -113,6 +113,7 @@ while True:
         conn.set_var("UserName",UNAME)
         print(e)
 app = Bottle()
+"""
 @app.route("/")
 def aaaa():
     return """
@@ -122,4 +123,4 @@ def aaaa():
       }
     </style><p>これが見えてたら公開済み</p>"""
 
-run(app, host='localhost',)
+run(app, host='localhost',)"""
