@@ -1,5 +1,2 @@
 bottle
 scratchattach
-time
-random
-requests
