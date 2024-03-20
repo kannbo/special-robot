@@ -1,4 +1,5 @@
 import scratchattach as scratch3,time,random,requests
+form bottle import run,route,Bottle
 session = scratch3.login("kannbo", {{PASSWORD}}) # 自分のパスワード
 conn = session.connect_cloud("980998475") # project_id
 NAME={}
@@ -107,4 +108,14 @@ while True:
         conn.set_var("message","0")
         UNAME=variables["UserName"]
         conn.set_var("UserName",UNAME)
+app = Bottle()
+@app.route("/")
+def aaaa():
+    return """
+    <style>
+    p{
+      color:red;
+      }
+    </style><p>これが見えてたら公開済み</p>"""
 
+run(app, host='localhost', port=8080)
