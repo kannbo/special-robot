@@ -103,7 +103,7 @@ while True:
         time.sleep(1)
         UNAME=variables["UserName"]
         conn.set_var("UserName",UNAME)
-    except:
+    except Exception as e:
         conn.set_var("error","1")
         print("error")
         conn.set_var("follow","0")
@@ -111,6 +111,7 @@ while True:
         conn.set_var("message","0")
         UNAME=variables["UserName"]
         conn.set_var("UserName",UNAME)
+        print(e)
 app = Bottle()
 @app.route("/")
 def aaaa():
