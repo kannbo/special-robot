@@ -122,4 +122,4 @@ def aaaa():
       }
     </style><p>これが見えてたら公開済み</p>"""
 
-run(app, host='localhost', port=8080)
+run(app, host='localhost',)
