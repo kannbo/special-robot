@@ -116,11 +116,11 @@ app = Bottle()
 """
 @app.route("/")
 def aaaa():
-    return """
+    return ""
     <style>
     p{
       color:red;
       }
-    </style><p>これが見えてたら公開済み</p>"""
+    </style><p>これが見えてたら公開済み</p>""
 
 run(app, host='localhost',)"""
