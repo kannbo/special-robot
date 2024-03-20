@@ -1,6 +1,8 @@
 import scratchattach as scratch3,time,random,requests
 from bottle import run,route,Bottle
-session = scratch3.login("kannbo", {{PASSWORD}}) # 自分のパスワード
+import os
+database_url = os.environ.get('PASSWORD')
+session = scratch3.login("kannbo", database_url) # 自分のパスワード
 conn = session.connect_cloud("980998475") # project_id
 NAME={}
 ii=0
