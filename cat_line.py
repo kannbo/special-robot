@@ -8,6 +8,8 @@ conn = session.connect_cloud("980998475") # project_id
 NAME={}
 ii=0
 debug=True #デバッグ以外False!!
+import subprocess
+subprocess.run(["python","web.py"]
 for i in """-
 _
 1
