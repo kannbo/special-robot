@@ -1,6 +1,6 @@
 from bottle import route, run, template
 import subprocess
-subprocess.run(["python3","cat_line.py"])
+subprocess.popen(["python3","cat_line.py"])
 
 @route('/hello/<name>')
 def index(name):
