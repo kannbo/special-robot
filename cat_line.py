@@ -85,7 +85,7 @@ while True:
     variables = scratch3.get_cloud("980998475")
     #print(scratch3.get_cloud("980998475"))
     #print(variables["UserName"],end=" ")
-    requests.get("0.0.0.0:10000")
+    requests.get("http://0.0.0.0:10000/")
     for i in str(variables["UserName"]).split("0"):
         
         if i=="":
