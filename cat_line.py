@@ -9,7 +9,7 @@ NAME={}
 ii=0
 debug=True #デバッグ以外False!!
 import subprocess
-subprocess.run(["python3","web.py"]
+subprocess.run(["python3","web.py"])
 for i in """-
 _
 1
