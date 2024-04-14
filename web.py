@@ -4,6 +4,6 @@ subprocess.Popen(["python3","cat_line.py"])
 
 @route('/')
 def index(name):
-    return template('<b>Hello {{name}}</b>!', name="world")
+    return "<title>こんちゃ</title><h1>OKです"
 
 run(host='0.0.0.0', port="10000")
