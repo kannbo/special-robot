@@ -105,14 +105,18 @@ while True:
         UNAME=variables["UserName"]
         conn.set_var("UserName",UNAME)
     except Exception as e:
-        conn.set_var("error","1")
-        print("error")
-        conn.set_var("follow","0")
-        conn.set_var("follower","0")
-        conn.set_var("message","0")
-        UNAME=variables["UserName"]
-        conn.set_var("UserName",UNAME)
-        print(e)
+        try:
+            conn.set_var("error","1")
+            print("error")
+            conn.set_var("follow","0")
+            conn.set_var("follower","0")
+            conn.set_var("message","0")
+            UNAME=variables["UserName"]
+            conn.set_var("UserName",UNAME)
+            print(e)
+        except:
+            session = scratch3.login("kannbo", str(PASSWORD)) # 自分のパスワード
+            conn = session.connect_cloud("980998475")
 app = Bottle()
 """
 @app.route("/")
