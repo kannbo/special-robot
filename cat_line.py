@@ -86,11 +86,11 @@ while True:
     #print(scratch3.get_cloud("980998475"))
     #print(variables["UserName"],end=" ")
     for i in str(variables["UserName"]).split("0"):
-        
-        if i=="":
+        print(type(i),type(str(i)))
+        if str(i)=="":
             pass
         else:
-            name=name+NAME[i]
+            name=name+NAME[str(i)]
     if debug:
         print(name)
     try:
