@@ -115,8 +115,11 @@ while True:
             conn.set_var("UserName",UNAME)
             print(e)
         except:
-            session = scratch3.login("kannbo", str(PASSWORD)) # 自分のパスワード
-            conn = session.connect_cloud("980998475")
+            try:
+                session = scratch3.login("kannbo", str(PASSWORD)) # 自分のパスワード
+                conn = session.connect_cloud("980998475")
+            except:
+                pass
 app = Bottle()
 """
 @app.route("/")
