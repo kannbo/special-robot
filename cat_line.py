@@ -87,10 +87,10 @@ while True:
     #print(variables["UserName"],end=" ")
     for i in str(variables["UserName"]).split("0"):
         print(type(i),type(str(i)))
-    if str(i)=="":
-        pass
-    else:
-        name=name+NAME[str(i)]
+        if str(i)=="":
+            pass
+        else:
+            name=name+NAME[str(i)]
     if debug:
         print(name)
     try:
