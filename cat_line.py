@@ -82,15 +82,18 @@ name=""
 while True:
     name=""
     time.sleep(random.randint(1,4))
-    variables = scratch3.get_cloud("980998475")
-    #print(scratch3.get_cloud("980998475"))
-    #print(variables["UserName"],end=" ")
-    for i in str(variables["UserName"]).split("0"):
-        print(type(i),type(str(i)))
+    try:
+        variables = scratch3.get_cloud("980998475")
+        #print(scratch3.get_cloud("980998475"))
+        #print(variables["UserName"],end=" ")
+        for i in str(variables["UserName"]).split("0"):
+            print(type(i),type(str(i)))
         if str(i)=="":
             pass
         else:
             name=name+NAME[str(i)]
+    except Exception as e:
+        print(e)
     if debug:
         print(name)
     try:
